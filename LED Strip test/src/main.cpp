@@ -1,13 +1,16 @@
 #include <Arduino.h>
 #include <Adafruit_NeoPixel.h>
 
-#define LED PIND2
-#define NUMPIXELS 8
+namespace {
 
-Adafruit_NeoPixel pixels(NUMPIXELS, LED, NEO_GRB + NEO_KHZ800);
+constexpr int led = PIND2;
+constexpr int numpixels = 8;
 
-int ledIndex = 0;
-uint32_t ledcolors[] = {0x000000, 0xff0000, 0x00ff00, 0x0000ff, 0xffff00, 0xff00ff, 0x00ffff, 0xffffff};
+Adafruit_NeoPixel pixels(numpixels, led, NEO_GRB + NEO_KHZ800);
+
+constexpr unsigned ledcolors[] = {0x000000, 0xff0000, 0x00ff00, 0x0000ff, 0xffff00, 0xff00ff, 0x00ffff, 0xffffff};
+
+}
 
 void setup() {
   // put your setup code here, to run once:
