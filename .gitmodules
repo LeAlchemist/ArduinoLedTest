@@ -1,0 +1,9 @@
+[submodule "cmake-avr"]
+	path = cmake-avr
+	url = https://github.com/mkleemann/cmake-avr
+[submodule "ArduinoCore-avr"]
+	path = ArduinoCore-avr
+	url = https://github.com/arduino/ArduinoCore-avr/
+[submodule "Adafruit_NeoPixel"]
+	path = Adafruit_NeoPixel
+	url = https://github.com/adafruit/Adafruit_NeoPixel
